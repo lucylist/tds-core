@@ -26,6 +26,7 @@
   "dependencies": {
     "@tds/core-box": "^1.0.3",
     "@tds/core-text": "^1.0.6",
+    "@tds/shared-typography": "^1.1.2",
     "@tds/util-prop-types": "^1.2.1",
     "prop-types": "^15.5.10"
   }
