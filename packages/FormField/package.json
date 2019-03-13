@@ -1,12 +1,29 @@
 {
   "name": "@tds/shared-form-field",
   "version": "2.1.2",
-  "private": true,
-  "main": "",
-  "module": "",
+  "description": "Apply animation to components",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telusdigital/tds.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "TELUS digital",
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/telusdigital/tds/issues"
+  },
+  "homepage": "http://tds.telus.com",
   "dependencies": {
     "@tds/core-box": "^1.0.3",
     "@tds/core-colours": "^1.1.0",
+    "@tds/core-flex-grid": "^2.3.7",
     "@tds/core-input-feedback": "^1.0.5",
     "@tds/core-paragraph": "^1.0.6",
     "@tds/core-standalone-icon": "^1.0.2",

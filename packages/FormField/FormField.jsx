@@ -6,14 +6,12 @@ import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
+import FlexGrid from '@tds/core-flex-grid'
 
-import safeRest from '../../utils/safeRest'
-import generateId from '../../utils/generateId/generateId'
-
-import Flexbox from '../Flexbox/Flexbox'
+import safeRest from '../../shared/utils/safeRest'
+import generateId from '../../shared/utils/generateId/generateId'
 
 import styles from './FormField.modules.scss'
-import positionStyles from '../../styles/Position.modules.scss'
 
 const getClassName = (feedback, focus, disabled) => {
   if (disabled) {
@@ -35,22 +33,22 @@ const showFeedbackIcon = (feedback, focus) =>
   (feedback === 'success' || feedback === 'error') && !focus
 
 const renderLabel = (label, hint, fieldId, tooltip) => (
-  <Flexbox
-    direction="row"
-    justifyContent="spaceBetween"
-    dangerouslyAddClassName={positionStyles.relative}
-  >
-    <label htmlFor={fieldId.identity()}>
-      <Box inline tag="span" between={2} dangerouslyAddClassName={styles.alignCenter}>
-        <Text size="medium" bold>
-          {label}
-        </Text>
-        {hint && <Text size="small">{hint}</Text>}
-      </Box>
-    </label>
+  <FlexGrid limitWidth={false} gutter={false}>
+    <FlexGrid.Row>
+      <FlexGrid.Col>
+        <label htmlFor={fieldId.identity()}>
+          <Box inline tag="span" between={2}>
+            <Text size="medium" bold>
+              {label}
+            </Text>
+            {hint && <Text size="small">{hint}</Text>}
+          </Box>
+        </label>
 
-    {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
-  </Flexbox>
+        {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
+      </FlexGrid.Col>
+    </FlexGrid.Row>
+  </FlexGrid>
 )
 
 const renderError = (error, errorId) => (
