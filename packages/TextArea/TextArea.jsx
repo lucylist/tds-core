@@ -2,12 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { componentWithName } from '@tds/util-prop-types'
 
+import FormField, { FeedbackIcon } from '@tds/shared-form-field'
+import Box from '@tds/core-box'
+
 import joinClassNames from '../../shared/utils/joinClassNames'
-
-import FormField from '../../shared/components/FormField/FormField'
-import FeedbackIcon from '../../shared/components/FormField/FeedbackIcon'
-
-import addRightPadding from '../../shared/components/FormField/addRightPadding'
 
 import styles from './TextArea.modules.scss'
 import positionStyles from '../../shared/styles/Position.modules.scss'
@@ -19,10 +17,16 @@ const TextArea = props => (
   <FormField {...props}>
     {({ className, ...textareaProps }, showFeedbackIcon, feedback) => (
       <div className={joinClassNames(positionStyles.relative, styles.preventWidthResizing)}>
-        <textarea
+        <Box
           {...textareaProps}
-          className={joinClassNames(className, styles.preventWidthResizing)}
-          style={addRightPadding(showFeedbackIcon ? 1 : 0)}
+          vertical={2}
+          horizontal={3}
+          dangerouslyAddClassName={joinClassNames(
+            className,
+            styles.preventWidthResizing,
+            showFeedbackIcon && styles.withFeedbackIcon
+          )}
+          tag="textarea"
         />
 
         {!textareaProps.disabled && (
