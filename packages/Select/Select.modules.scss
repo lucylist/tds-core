@@ -20,7 +20,15 @@
 
 .iconsPosition {
   composes: absolute centerVertically from '../../shared/styles/Position.modules.scss';
-  composes: iconRight from '../../shared/components/FormField/FormField.modules.scss';
+  composes: iconRight from '../FormField/FormField.modules.scss';
 
   pointer-events: none;
+}
+
+.withFeedbackIcon {
+  padding-right: 4rem; // See: addRightPadding.js
+}
+
+.withoutFeedbackIcon {
+  padding-right: 3rem; // See: addRightPadding.js
 }

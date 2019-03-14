@@ -5,11 +5,9 @@ import { componentWithName } from '@tds/util-prop-types'
 import DecorativeIcon from '@tds/core-decorative-icon'
 import Box from '@tds/core-box'
 
-import joinClassNames from '../../shared/utils/joinClassNames'
+import FormField, { FeedbackIcon } from '@tds/shared-form-field'
 
-import FormField from '../../shared/components/FormField/FormField'
-import FeedbackIcon from '../../shared/components/FormField/FeedbackIcon'
-import addRightPadding from '../../shared/components/FormField/addRightPadding'
+import joinClassNames from '../../shared/utils/joinClassNames'
 
 import styles from './Select.modules.scss'
 import iconWrapperStyles from '../../shared/styles/IconWrapper.modules.scss'
@@ -28,10 +26,16 @@ const Select = ({ options, placeholder, ...props }) => {
     <FormField {...props} {...extraProps}>
       {({ className, ...selectProps }, showFeedbackIcon, feedback) => (
         <div className={styles.wrapper}>
-          <select
+          <Box
             {...selectProps}
-            className={joinClassNames(className, styles.select)}
-            style={addRightPadding(showFeedbackIcon ? 2 : 1)}
+            vertical={2}
+            horizontal={3}
+            dangerouslyAddClassName={joinClassNames(
+              className,
+              styles.select,
+              showFeedbackIcon ? styles.withFeedbackIcon : styles.withoutFeedbackIcon
+            )}
+            tag="select"
           >
             {placeholder && (
               <option value="" disabled>
@@ -43,7 +47,7 @@ const Select = ({ options, placeholder, ...props }) => {
                 {text}
               </option>
             ))}
-          </select>
+          </Box>
 
           {!selectProps.disabled && (
             <Box inline between={3} dangerouslyAddClassName={styles.iconsPosition}>
