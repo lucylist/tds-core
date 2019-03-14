@@ -5,28 +5,36 @@ exports[`Input renders 1`] = `
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
   <div
-    class="row justifyContentSpaceBetween relative"
+    class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
   >
-    <label
-      for="the-input"
+    <div
+      class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
     >
-      <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz alignCenter"
+      <div
+        class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
       >
-        <span
-          class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+        <label
+          for="the-input"
         >
-          The input
-        </span>
-      </span>
-    </label>
+          <span
+            class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+          >
+            <span
+              class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+            >
+              The input
+            </span>
+          </span>
+        </label>
+      </div>
+    </div>
   </div>
   <div
     class="relative"
   >
     <input
       aria-invalid="false"
-      class="default hideNumberSpinner input"
+      class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T TDS_FormField-modules__default___3LtXb TDS_FormField-modules__formField___29WmQ TDS_Borders-modules__thin___1JHOl TDS_Borders-modules__rounded___3df1Q TDS_Forms-modules__font___g7OGX TDS_FormField-modules__medium___1FfhV TDS_FormField-modules__wordBreak___11lNB TDS_FormField-modules__mediumFont___2AbN7 TDS_FormField-modules__color___3x5Uc TDS_FormField-modules__defaultBgColor___NByyE TDS_FormField-modules__defaultBoxShadow___21E8t hideNumberSpinner input"
       id="the-input"
       type="text"
     />
@@ -42,30 +50,37 @@ exports[`Input renders with a feedback state and icon 1`] = `
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
   <div
-    class="row justifyContentSpaceBetween relative"
+    class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
   >
-    <label
-      for="the-input"
+    <div
+      class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
     >
-      <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz alignCenter"
+      <div
+        class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
       >
-        <span
-          class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+        <label
+          for="the-input"
         >
-          The input
-        </span>
-      </span>
-    </label>
+          <span
+            class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+          >
+            <span
+              class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+            >
+              The input
+            </span>
+          </span>
+        </label>
+      </div>
+    </div>
   </div>
   <div
     class="relative"
   >
     <input
       aria-invalid="true"
-      class="error hideNumberSpinner input"
+      class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T TDS_FormField-modules__error___2pMXQ TDS_FormField-modules__formField___29WmQ TDS_Borders-modules__thin___1JHOl TDS_Borders-modules__rounded___3df1Q TDS_Forms-modules__font___g7OGX TDS_FormField-modules__medium___1FfhV TDS_FormField-modules__wordBreak___11lNB TDS_FormField-modules__mediumFont___2AbN7 TDS_FormField-modules__color___3x5Uc TDS_FormField-modules__defaultBgColor___NByyE TDS_FormField-modules__defaultBoxShadow___21E8t hideNumberSpinner input withFeedbackIcon"
       id="the-input"
-      style="padding-right:calc(16px + 2rem)"
       type="text"
     />
     <div
@@ -75,7 +90,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="fixLineHeight"
+          class="TDS_IconWrapper-modules__fixLineHeight___3tqIl"
         >
           <i
             aria-label="The value of this input field is invalid."

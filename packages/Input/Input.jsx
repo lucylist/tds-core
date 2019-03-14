@@ -4,11 +4,9 @@ import { componentWithName } from '@tds/util-prop-types'
 
 import InputFeedback from '@tds/core-input-feedback'
 
+import FormField, { FeedbackIcon } from '@tds/shared-form-field'
+import Box from '@tds/core-box'
 import joinClassNames from '../../shared/utils/joinClassNames'
-
-import FormField from '../../shared/components/FormField/FormField'
-import FeedbackIcon from '../../shared/components/FormField/FeedbackIcon'
-import addRightPadding from '../../shared/components/FormField/addRightPadding'
 
 import positionStyles from '../../shared/styles/Position.modules.scss'
 import styles from './Input.modules.scss'
@@ -20,12 +18,18 @@ const Input = props => (
   <FormField {...props}>
     {({ className, ...inputProps }, showFeedbackIcon, feedback) => (
       <div className={positionStyles.relative}>
-        <input
+        <Box
           {...inputProps}
-          className={joinClassNames(className, styles.hideNumberSpinner, styles.input)}
-          style={addRightPadding(showFeedbackIcon ? 1 : 0)}
+          vertical={2}
+          horizontal={3}
+          dangerouslyAddClassName={joinClassNames(
+            className,
+            styles.hideNumberSpinner,
+            styles.input,
+            showFeedbackIcon && styles.withFeedbackIcon
+          )}
+          tag="input"
         />
-
         {!inputProps.disabled && (
           <div className={styles.iconsPosition}>
             <FeedbackIcon showIcon={showFeedbackIcon} feedback={feedback} />
