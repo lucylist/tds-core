@@ -27,13 +27,13 @@
   "dependencies": {
     "@tds/core-box": "^1.0.3",
     "@tds/core-hairline-divider": "^1.0.3",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "@tds/shared-typography": "^1.1.2"
   },
   "devDependencies": {
     "@tds/core-display-heading": "^1.0.9",
     "@tds/core-heading": "^1.1.8",
     "@tds/core-responsive": "^1.2.0",
-    "@tds/core-text": "^1.0.6",
-    "@tds/shared-typography": "^1.1.2"
+    "@tds/core-text": "^1.0.6"
   }
 }
