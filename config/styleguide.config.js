@@ -266,7 +266,7 @@ module.exports = {
             return [
               path.resolve('packages/Card/Card.jsx'),
               path.resolve('packages/Image/Image.jsx'),
-              path.resolve('packages/Video/Video.jsx'),
+              path.resolve('packages/YoutubeVideo/YoutubeVideo.jsx'),
               path.resolve('packages/A11yContent/A11yContent.jsx'),
             ]
           },
